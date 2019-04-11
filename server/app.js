@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 // we will send the index.html!
 app.get('/*', (req, res, next) => {
 	
-	res.sendFile(path.join(__dirname,'../public','<script>index.html'));
+	res.sendFile(path.join(__dirname,'../public','index.html'));
 });
 
 // Handle 404s
